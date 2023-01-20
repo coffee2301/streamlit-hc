@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 
-st.title('Annual monthly rates')
-st.title('Monthly _rates_ :blue[2020-2022] and :sunglasses:')
+st.title('Annual monthly rates of KPI')
+st.title('Monthly _rates_ :blue[2020-2022] of rates and price :sunglasses:')
 
 money = pd.read_csv("money_data7.csv")
 
