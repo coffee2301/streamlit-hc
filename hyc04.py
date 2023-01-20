@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 
 st.title('Annual monthly rates of KPI')
-st.title('Monthly _rates_ of :blue[2020-2022] and price :sunglasses:')
+st.title('Monthly _interest and kospi rates_ of :blue[2020-2022] and house price :sunglasses:')
 
 money = pd.read_csv("money_data7.csv")
 
