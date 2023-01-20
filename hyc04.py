@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 
-st.title('annual monthly rates')
-st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
+st.title('Annual monthly rates')
+st.title('Monthly _rates_ :blue[2020-2022] and :sunglasses:')
 
 money = pd.read_csv("money_data7.csv")
 
