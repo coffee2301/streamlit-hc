@@ -10,14 +10,10 @@ st.title('Monthly _interest, kospi rates_ of :blue[2020-2022] and house price :s
 money = pd.read_csv("money_data7.csv")
 
 st.sidebar.success("Select a demo above.")
-st.sidebar.success("Annual monthly rates of KPI")
 with st.sidebar:
     with st.echo():
         st.write("This code will be printed to the sidebar.")
 
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
 
 
 option = st.selectbox(
