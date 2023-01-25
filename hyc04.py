@@ -10,9 +10,19 @@ st.title('Monthly _interest, kospi rates_ of :blue[2020-2022] and house price :s
 money = pd.read_csv("money_data7.csv")
 
 st.sidebar.success("Select a demo above.")
+
+# Using object notation
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
+
+# Using "with" notation
 with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
 
 
 
