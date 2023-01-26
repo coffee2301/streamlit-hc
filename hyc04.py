@@ -7,11 +7,11 @@ import streamlit as st
 st.title('Annual monthly rates of KPI')
 st.title('Monthly _interest, kospi rates_ of :blue[2020-2022] and house price :sunglasses:')
 
-# def  plotting_demo():
-#     money = pd.read_csv("money_data7.csv")
-#     option = st.selectbox(
-#         'How would you like to choice year ?',
-#         ('2020', '2021', '2022'))
+def  plotting_demo():
+    money = pd.read_csv("money_data7.csv")
+    option = st.selectbox(
+        'How would you like to choice year ?',
+        ('2020', '2021', '2022'))
     
 money = pd.read_csv("money_data7.csv")
 
