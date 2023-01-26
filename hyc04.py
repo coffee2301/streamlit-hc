@@ -14,6 +14,7 @@ def  plotting_demo():
         ('2020', '2021', '2022'))
     
 
+money = pd.read_csv("money_data7.csv")
 option2 = int(option)
 
 st.write('You selected:', option)
