@@ -13,11 +13,11 @@ def  plotting_demo():
         'How would you like to choice year ?',
         ('2020', '2021', '2022'))
     
-money = pd.read_csv("money_data7.csv")
+# money = pd.read_csv("money_data7.csv")
 
-option = st.selectbox(
-    'How would you like to choose year ?',
-    ('2020', '2021', '2022'))
+# option = st.selectbox(
+#     'How would you like to choose year ?',
+#     ('2020', '2021', '2022'))
 
 option2 = int(option)
 
