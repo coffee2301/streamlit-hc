@@ -10,7 +10,7 @@ import numpy as np
 st.title('Annual monthly rates of KPI')
 st.title('Monthly _interest, kospi rates_ of :blue[2020-2022] and house price :sunglasses:')
 
-def  plotting_demo():
+def  plotting_line_graph():
     money = pd.read_csv("money_data7.csv")
     option = st.selectbox(
         'How would you like to choice year ?',
@@ -51,8 +51,8 @@ def  plotting_demo():
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
+        select_language = st.sidebar.radio('What do you want ?', ('line graph', 'bar graph', 'pie graph', 'histogram graph, 'corr graph', 'word cloud', 'box graph'))
         
         
-if select_language =='line':        
-    plotting_demo()      
+if select_language =='line graph':        
+    plotting_line_graph   
