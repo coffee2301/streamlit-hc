@@ -59,4 +59,4 @@ with st.form(key ='Form1'):
         
         
 if select_language =='line':        
-    plotting_demo()     
+    plotting_demo()    
