@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import lxml.html
 
 #money = pd.read_csv("money_data7.csv")
 
