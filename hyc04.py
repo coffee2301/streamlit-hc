@@ -3,10 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-#money = pd.read_csv("money_data7.csv")
-
-#st.sidebar.success("Select a demo above.")
-
 st.title('Graph&Charts :sunglasses:')
 # st.title('Monthly _interest, kospi rates_ of :blue[2020-2022] and house price :sunglasses:')
 
@@ -55,13 +51,13 @@ def  plotting_demo():
     st.dataframe(money)
 
 def bar_chart():
-    url = " https://sports.news.naver.com/kbaseball/record/index?category=kbo&year= "
+    url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
 
     years = ['2015', '2016','2017', '2018', '2019', '2020', '2021', '2022' ]
 
     df = pd.DataFrame([]) 
 
-    for    i    in     years: 
+    for i in years: 
         df1 = pd.read_html( url + i  )[0]
         df1['년도'] =  i 
         df = pd.concat([df, df1], axis=0)
@@ -78,7 +74,7 @@ def bar_chart():
 
     st.write('You selected:', option)
 
-    df7  =  baseball[:] [ baseball.년도==option2 ]
+    df7 = baseball[:][baseball.년도==option2]
     x = df7.팀
     y = df7.승률
     
@@ -87,10 +83,10 @@ def bar_chart():
     colors = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7' ,'C8', 'C9', 'C10' ]
     plt.bar(  x,  y,  color= colors ) 
 
-    for   num ,   v    in   enumerate( y ):
-        plt.text (  num -0.4  ,   v + 0.01 ,  v   )
+    for num, v in enumerate(y):
+        plt.text (num - 0.4, v + 0.01, v)
 
-    plt.title( "year korea baseball winrate data", position=(0.5,1.1))
+    plt.title("year korea baseball winrate data", position=(0.5,1.1))
     st.pyplot(fig)
     st.dataframe(df7)    
     
