@@ -7,8 +7,8 @@ import numpy as np
 
 #st.sidebar.success("Select a demo above.")
 
-st.title('Annual monthly rates of KPI')
-st.title('Monthly _interest, kospi rates_ of :blue[2020-2022] and house price :sunglasses:')
+st.title('Graph&Charts :sunglasses:')
+# st.title('Monthly _interest, kospi rates_ of :blue[2020-2022] and house price :sunglasses:')
 
 def  plotting_demo():
     
