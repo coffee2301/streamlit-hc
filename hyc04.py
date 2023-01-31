@@ -70,7 +70,7 @@ def bar_chart():
         'How would you like to choice year ?',
         ('2015', '2016','2017', '2018', '2019', '2020', '2021', '2022'))
 
-    option2 = option
+    option2 = option    #빼고 모두 option으로 써도 됨. 
 
     st.write('You selected:', option)
 
@@ -85,9 +85,10 @@ def bar_chart():
 
     for num, v in enumerate(y):
         plt.text (num - 0.4, v + 0.01, v)
+        #  index번호(enumerate로 생성한), 승률x축 좌표, y축 좌표
 
-    plt.title("year korea baseball winrate data", position=(0.5,1.1))
-    st.pyplot(fig)
+    plt.title("Korea Basketball League(KBL) winnig percentage data", position=(0.5,1.1))
+    st.pyplot(fig)     # plt.show()
     st.dataframe(df7)    
     
     
