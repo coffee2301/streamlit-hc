@@ -79,7 +79,7 @@ def bar_chart():
     
     fig, ax = plt.subplots(figsize=(12,8))
 
-    colors = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7' ,'C8', 'C9', 'C10' ]
+    colors = ['lightpink', 'deeppink', 'crimson', 'pink', 'plum', 'C4', 'C0', 'C9', 'lightsteelblue', 'royalblue' ]
     plt.bar(  x,  y,  color= colors ) 
 
     for num, v in enumerate(y):
@@ -91,8 +91,8 @@ def bar_chart():
     st.dataframe(df7)    
     
     
-st.set_page_config(layout="centered", initial_sidebar_state="auto")     
-    
+st.set_page_config(layout="centered")
+
 with st.form(key ='Form1'):
     with st.sidebar:
  
