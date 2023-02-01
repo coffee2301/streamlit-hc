@@ -9,7 +9,6 @@ st.title('Graph&Charts :sunglasses:')
 def  plotting_demo():
     
 #     uploaded_file = st.file_uploader("Choose a file")
-
 #     money=pd.read_csv(uploaded_file)
         
     money = pd.read_csv("money_data7.csv")
@@ -92,7 +91,7 @@ def bar_chart():
     st.dataframe(df7)    
     
     
-st.set_page_config(layout="centered")     
+st.set_page_config(layout="centered", initial_sidebar_state="auto")     
     
 with st.form(key ='Form1'):
     with st.sidebar:
