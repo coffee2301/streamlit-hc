@@ -91,6 +91,7 @@ def bar_chart():
     st.pyplot(fig)     # plt.show()
     st.dataframe(df7)    
     
+st.set_page_config(layout="wide")    # centered, wide로 바꾸면 그래프가 옆으로 쫙 퍼진다
     
 with st.form(key ='Form1'):
     with st.sidebar:
@@ -103,8 +104,8 @@ with st.form(key ='Form1'):
 if select_language =='금리와 집값 빠르게 파악하기':        
     try:
           plotting_demo()  
-    except:      
-          pass
+#     except:      
+#           pass
 
 elif select_language =='야구 순위와 승률 빠르게 파악하기':
     bar_chart()
