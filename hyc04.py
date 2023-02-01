@@ -92,13 +92,10 @@ def bar_chart():
     st.dataframe(df7)    
     
     
-# st.set_page_config(layout="centered")
+st.set_page_config(layout="centered")     
     
 with st.form(key ='Form1'):
     with st.sidebar:
-        
-#         select_language = st.sidebar.radio('What do you want ?', ('line graph', 'bar graph', 'pie graph', 'histogram graph', 
-#                                                                   'corr graph', 'word cloud', 'box graph'))
  
         select_language = st.sidebar.radio('데이터 분석 결과', ('금리와 집값 빠르게 파악하기', '야구 순위와 승률 빠르게 파악하기', '다른 데이터 분석'))
         
