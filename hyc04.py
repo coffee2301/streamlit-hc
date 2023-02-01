@@ -104,6 +104,8 @@ with st.form(key ='Form1'):
 if select_language =='금리와 집값 빠르게 파악하기':        
     try:
           plotting_demo()  
+    except:      
+          pass
             
 elif select_language =='야구 순위와 승률 빠르게 파악하기':
     bar_chart()
