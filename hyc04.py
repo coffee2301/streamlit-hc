@@ -91,7 +91,7 @@ def bar_chart():
     st.pyplot(fig)     # plt.show()
     st.dataframe(df7)    
     
-st.set_page_config(layout="wide")    # centered, wide로 바꾸면 그래프가 옆으로 쫙 퍼진다
+st.set_page_config(layout="centered")    # wide로 바꾸면 그래프가 옆으로 쫙 퍼진다
     
 with st.form(key ='Form1'):
     with st.sidebar:
