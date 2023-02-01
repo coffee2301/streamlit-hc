@@ -32,7 +32,7 @@ def  plotting_demo():
 
 
     plt.subplot(222)
-    plt.plot(  list( money['A_MONTH'] ), list( money['K_RATE'] ), color='blue' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['K_RATE'] ), color='orage' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('Korea rate')
 
