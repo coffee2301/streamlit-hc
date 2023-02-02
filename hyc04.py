@@ -95,7 +95,7 @@ def bar_chart():
 
     plt.title("Korea Basketball League(KBL) winnig percentage data", position=(0.5,1.1))
     st.pyplot(fig)     # plt.show()
-    st.dataframe(df7)    
+#     st.dataframe(df7)    
     
     
 # st.set_page_config(layout="centered")
