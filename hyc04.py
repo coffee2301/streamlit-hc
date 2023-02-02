@@ -131,4 +131,5 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
     with tab2:
         tab2.subheader("A tab with the data")
         st.dataframe(bb)  
+        tab2.subheader("누적 데이터")
         st.dataframe(cc)
