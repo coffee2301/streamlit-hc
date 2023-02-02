@@ -65,8 +65,11 @@ def bar_chart():
         df1['년도'] =  i 
         df = pd.concat([df, df1], axis=0)
         
-    baseball = df    
-
+#     baseball = df    #**나
+    
+    global bb 
+    bb = baseball   # bb에 선택한 년도에 대한 데이터 담음
+    
     baseball.팀.replace({'두산':'Dusan','삼성':'SS','키움':'KU','한화': 'HH','롯데':'Lotte','넥센':'NecSen'}, inplace=True)
     
     option = st.selectbox(
@@ -116,4 +119,12 @@ if select_language =='금리와 집값 빠르게 파악하기':
 
         
 elif select_language =='야구 순위와 승률 빠르게 파악하기':
-    bar_chart()
+    tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+    
+    with tab1:
+        tab1.subheader("A tab with a chart")
+        bar_chart()
+        
+    with tab2:
+        tab2.subheader("A tab with the data")
+        st.dataframe(bb)  
