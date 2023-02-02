@@ -23,9 +23,9 @@ def  plotting_demo():
 
     money = money[:] [money['A_YEAR']== option2]
     
-    global aa
+    global aa 
     
-    aa = money
+    aa = money   # aa에 선택한 년도에 대한 데이터 담음
 
     fig, ax = plt.subplots(2,2, figsize=(12,8))
 
@@ -111,7 +111,7 @@ if select_language =='금리와 집값 빠르게 파악하기':
         
     with tab2:
         tab2.subheader("A tab with the data")
-        st.dataframe(aa)
+        st.dataframe(aa)  #aa: 선택한 년도에 대한 데이터
 
 
         
