@@ -65,7 +65,7 @@ def bar_chart():
         df1['년도'] =  i 
         df = pd.concat([df, df1], axis=0)
         
-#     baseball = df    #**나
+    baseball = df    #**나
     
     global bb 
     bb = baseball   # bb에 선택한 년도에 대한 데이터 담음
