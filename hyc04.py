@@ -65,10 +65,7 @@ def bar_chart():
         df1['년도'] =  i 
         df = pd.concat([df, df1], axis=0)
         
-    baseball = df    #**나
-    
-    global bb 
-    bb = baseball   # bb에 선택한 년도에 대한 데이터 담음
+    baseball = df  
     
     baseball.팀.replace({'두산':'Dusan','삼성':'SS','키움':'KU','한화': 'HH','롯데':'Lotte','넥센':'NecSen'}, inplace=True)
     
@@ -83,6 +80,9 @@ def bar_chart():
     df7 = baseball[:][baseball.년도==option2]
     x = df7.팀
     y = df7.승률
+
+    global bb 
+    bb = df7   # bb에 선택한 년도에 대한 데이터 담음
     
     fig, ax = plt.subplots(figsize=(12,8))
 
