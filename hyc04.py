@@ -67,6 +67,9 @@ def bar_chart():
         
     baseball = df  
     
+    global cc # 개인적으로 누적 데이터 포함 위해 추가 
+    cc = baseball   # cc에 전체 누적 데이터 담음
+    
     baseball.팀.replace({'두산':'Dusan','삼성':'SS','키움':'KU','한화': 'HH','롯데':'Lotte','넥센':'NecSen'}, inplace=True)
     
     option = st.selectbox(
@@ -128,3 +131,4 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
     with tab2:
         tab2.subheader("A tab with the data")
         st.dataframe(bb)  
+        st.dataframe(cc)
