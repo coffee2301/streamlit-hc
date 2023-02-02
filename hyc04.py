@@ -12,7 +12,10 @@ def  plotting_demo():
 #     money=pd.read_csv(uploaded_file)
         
     money = pd.read_csv("money_data7.csv")
-
+    
+    global dd
+    dd = money
+    
     option = st.selectbox(
         'How would you like to choice year ?',
         ('2020', '2021', '2022'))
@@ -23,8 +26,7 @@ def  plotting_demo():
 
     money = money[:] [money['A_YEAR']== option2]
     
-    global aa 
-    
+    global aa     
     aa = money   # aa에 선택한 년도에 대한 데이터 담음
 
     fig, ax = plt.subplots(2,2, figsize=(12,8))
@@ -118,7 +120,8 @@ if select_language =='금리와 집값 빠르게 파악하기':
     with tab2:
         tab2.subheader("A tab with the data")
         st.dataframe(aa)  #aa: 선택한 년도에 대한 데이터
-
+        tab2.subheader("누적 데이터")
+        st.dataframe(dd)
 
         
 elif select_language =='야구 순위와 승률 빠르게 파악하기':
@@ -127,6 +130,7 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
     with tab1:
         tab1.subheader("A tab with a chart")
         bar_chart()
+
         
     with tab2:
         tab2.subheader("A tab with the data")
